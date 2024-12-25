@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { MdDelete } from "react-icons/md";
 import { removeFromCart } from "../redux/CartSlice";
-
+import img7 from "../assets/9038.jpg";
 const Cart = () => {
   const navigate = useNavigate();
   const { carts } = useSelector((state) => state.allCart);
@@ -31,7 +31,7 @@ const Cart = () => {
   if (carts.length === 0) {
     return (
       <div className="text-center px-sm-5 mx-sm-5">
-        <img src="./assets/9038.jpg" alt="empty" className="m-auto" width={360} />
+        <img src={img7} alt="empty" className="m-auto" width={360} />
         <br />
         <Button
           className="w-50 text-center mx-5"
